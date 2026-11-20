@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f069237-3842-4db2-a88a-c8ef12c5bbe0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/KOMTXKBI SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/KOMTXKBI SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.a26willuUnityExamination_Nov26_EM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.a26willuUnityExamination_Nov26_EM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Linerendererscript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7,
@@ -87,7 +90,7 @@
       <updated>1795179299804</updated>
       <workItem from="1795179301979" duration="6000" />
       <workItem from="1795179333621" duration="1000" />
-      <workItem from="1795179337452" duration="3883000" />
+      <workItem from="1795179337452" duration="4551000" />
     </task>
     <servers />
   </component>
