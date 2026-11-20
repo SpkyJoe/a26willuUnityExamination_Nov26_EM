@@ -22087,8 +22087,8 @@ Transform:
   m_GameObject: {fileID: 1327464391}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.59238, y: 5.41771, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.37, y: 1.33, z: 0}
+  m_LocalScale: {x: 0.3108429, y: 0.3108429, z: 0.3108429}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 42167805}
@@ -22722,7 +22722,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
