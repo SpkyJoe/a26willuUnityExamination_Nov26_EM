@@ -45,7 +45,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         
         rigidbody.gravityScale = 0; // Set gravity scale to 0 so player won't "fall". We will apply our own gravity!
 
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
     
     void Update()
@@ -67,11 +67,11 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         {
             if (velocity.y < 0)
             {
-                // Has fallen. Play fall sound and/or trigger fall animation etc
+                animator.SetTrigger("Idle");
             }
             else
             {
-                // Has jumped. Play jump sound and/or trigger jump animation etc
+                animator.SetTrigger("Jump");
             }
         }
         // Check if character gained contact with ground this frame
@@ -89,6 +89,11 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         
         // Write movement animation code here. (Suggestion: send your current velocity into the Animator for both the x- and y-axis.)
         // animator.SetFloat("HorizontalMovement", moveInput.x)
+        if (Mathf.Abs(velocity.x) > 0.01f)
+        {
+            animator.SetBool("Moving", true);
+        }
+        else animator.SetBool("Moving", false);
         
         // Flip sprite according to direction (if a sprite renderer has been assigned)
         if (spriteRenderer)
@@ -105,10 +110,12 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         // Is our groundCheckCollider touching the groundLayer? If so, return the value "true"
         if (groundCheckCollider.IsTouchingLayers(groundLayer))
         {
+            animator.SetBool("Grounded", true);
             return true;
         }
         else
         {
+            animator.SetBool("Grounded", false);
             return false;
         }
     }
